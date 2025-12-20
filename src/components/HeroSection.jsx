@@ -1,12 +1,6 @@
+import profileImage from '../images/Gemini_Generated_Image_df3qhhdf3qhhdf3q.png';
+
 const HeroSection = () => {
-    // Professional gradient avatar placeholder
-    const AvatarPlaceholder = () => (
-        <div className="w-full h-full bg-gradient-to-br from-purple-600 via-pink-500 to-cyan-400 flex items-center justify-center">
-            <svg className="w-32 h-32 md:w-40 md:h-40 text-white/90" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z" />
-            </svg>
-        </div>
-    );
 
     return (
         <section
@@ -160,7 +154,11 @@ const HeroSection = () => {
 
                     {/* Profile Image Container */}
                     <div className="relative w-72 h-72 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-purple-500/20">
-                        <AvatarPlaceholder />
+                        <img
+                            src={profileImage}
+                            alt="Navoda Dasun - Data Science Undergraduate"
+                            className="w-full h-full object-cover"
+                        />
                         {/* Overlay Gradient */}
                         <div className="absolute inset-0 bg-gradient-to-tr from-purple-500/10 to-transparent"></div>
                     </div>
