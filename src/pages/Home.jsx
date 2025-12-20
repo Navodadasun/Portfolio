@@ -8,7 +8,7 @@ import Footer from '../components/Footer';
 
 const Home = () => {
     return (
-        <div className="min-h-screen bg-background text-foreground">
+        <div className="min-h-screen" style={{ backgroundColor: 'var(--color-background)', color: 'var(--color-foreground)', transition: 'background-color 0.3s ease, color 0.3s ease' }}>
             <Navbar />
             <main>
                 <HeroSection />

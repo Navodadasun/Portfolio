@@ -12,7 +12,7 @@ export const NotFound = () => {
             <h1 className="text-9xl font-bold tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 mb-4">
                 404
             </h1>
-            <p className="text-2xl text-gray-400 mb-8 font-light">
+            <p className="text-2xl mb-8 font-light" style={{ color: 'var(--color-text-secondary)' }}>
                 Oops! This page seems to have drifted into a black hole.
             </p>
 

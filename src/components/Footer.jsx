@@ -16,7 +16,7 @@ const Footer = () => {
     ];
 
     return (
-        <footer style={{ padding: '3rem 0', borderTop: '1px solid rgba(255, 255, 255, 0.1)', position: 'relative' }}>
+        <footer style={{ padding: '3rem 0', borderTop: '1px solid var(--glass-border)', position: 'relative' }}>
             {/* Background */}
             <div style={{
                 position: 'absolute',
@@ -37,7 +37,7 @@ const Footer = () => {
                         <a href="#home" className="text-gradient" style={{ fontSize: '1.875rem', fontWeight: 700, display: 'inline-block', marginBottom: '1rem', textDecoration: 'none' }}>
                             Portfolio
                         </a>
-                        <p style={{ color: '#9ca3af', marginBottom: '1.5rem', lineHeight: 1.6 }}>
+                        <p style={{ color: 'var(--color-text-secondary)', marginBottom: '1.5rem', lineHeight: 1.6 }}>
                             Building digital experiences that make a difference. Let's create something amazing together.
                         </p>
                         <div style={{ display: 'flex', gap: '0.75rem' }}>
@@ -51,11 +51,11 @@ const Footer = () => {
                                         width: '2.5rem',
                                         height: '2.5rem',
                                         borderRadius: '0.75rem',
-                                        background: 'rgba(255, 255, 255, 0.05)',
+                                        background: 'var(--glass-bg)',
                                         display: 'flex',
                                         alignItems: 'center',
                                         justifyContent: 'center',
-                                        color: '#9ca3af',
+                                        color: 'var(--color-text-secondary)',
                                         transition: 'all 0.3s ease',
                                         textDecoration: 'none',
                                     }}
@@ -71,14 +71,14 @@ const Footer = () => {
 
                     {/* Quick Links */}
                     <div>
-                        <h4 style={{ fontSize: '1.25rem', fontWeight: 600, color: '#fff', marginBottom: '1rem' }}>Quick Links</h4>
+                        <h4 style={{ fontSize: '1.25rem', fontWeight: 600, color: 'var(--color-text-primary)', marginBottom: '1rem' }}>Quick Links</h4>
                         <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
                             {quickLinks.map((link) => (
                                 <li key={link.name}>
                                     <a
                                         href={link.href}
                                         style={{
-                                            color: '#9ca3af',
+                                            color: 'var(--color-text-secondary)',
                                             textDecoration: 'none',
                                             transition: 'all 0.3s ease',
                                         }}
@@ -92,8 +92,8 @@ const Footer = () => {
 
                     {/* Newsletter */}
                     <div>
-                        <h4 style={{ fontSize: '1.25rem', fontWeight: 600, color: '#fff', marginBottom: '1rem' }}>Stay Updated</h4>
-                        <p style={{ color: '#9ca3af', marginBottom: '1rem' }}>
+                        <h4 style={{ fontSize: '1.25rem', fontWeight: 600, color: 'var(--color-text-primary)', marginBottom: '1rem' }}>Stay Updated</h4>
+                        <p style={{ color: 'var(--color-text-secondary)', marginBottom: '1rem' }}>
                             Subscribe to my newsletter for the latest updates and insights.
                         </p>
                         <form style={{ display: 'flex', gap: '0.5rem' }}>
@@ -104,9 +104,9 @@ const Footer = () => {
                                     flex: 1,
                                     padding: '0.75rem 1rem',
                                     borderRadius: '0.75rem',
-                                    background: 'rgba(255, 255, 255, 0.05)',
-                                    border: '1px solid rgba(255, 255, 255, 0.1)',
-                                    color: '#fff',
+                                    background: 'var(--glass-bg)',
+                                    border: '1px solid var(--glass-border)',
+                                    color: 'var(--color-text-primary)',
                                     fontSize: '0.875rem',
                                     outline: 'none',
                                 }}
@@ -135,21 +135,21 @@ const Footer = () => {
                 {/* Bottom Bar */}
                 <div style={{
                     paddingTop: '2rem',
-                    borderTop: '1px solid rgba(255, 255, 255, 0.1)',
+                    borderTop: '1px solid var(--glass-border)',
                     display: 'flex',
                     flexWrap: 'wrap',
                     justifyContent: 'space-between',
                     alignItems: 'center',
                     gap: '1rem',
                 }}>
-                    <p style={{ color: '#9ca3af', fontSize: '0.875rem' }}>
+                    <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.875rem' }}>
                         © {currentYear} Portfolio. All rights reserved.
                     </p>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem', fontSize: '0.875rem' }}>
-                        <a href="#" style={{ color: '#9ca3af', textDecoration: 'none', transition: 'color 0.3s ease' }}>
+                        <a href="#" style={{ color: 'var(--color-text-secondary)', textDecoration: 'none', transition: 'color 0.3s ease' }}>
                             Privacy Policy
                         </a>
-                        <a href="#" style={{ color: '#9ca3af', textDecoration: 'none', transition: 'color 0.3s ease' }}>
+                        <a href="#" style={{ color: 'var(--color-text-secondary)', textDecoration: 'none', transition: 'color 0.3s ease' }}>
                             Terms of Service
                         </a>
                     </div>

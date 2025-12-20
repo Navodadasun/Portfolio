@@ -50,14 +50,14 @@ const SkillsSection = () => {
             <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 1.5rem', position: 'relative', zIndex: 10 }}>
                 {/* Section Header */}
                 <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
-                    <span className="glass-effect" style={{ display: 'inline-block', padding: '0.5rem 1rem', borderRadius: '9999px', color: '#a78bfa', fontSize: '0.875rem', fontWeight: 500, marginBottom: '1rem' }}>
+                    <span className="glass-effect" style={{ display: 'inline-block', padding: '0.5rem 1rem', borderRadius: '9999px', color: 'var(--color-primary)', fontSize: '0.875rem', fontWeight: 500, marginBottom: '1rem' }}>
                         My Skills
                     </span>
-                    <h2 style={{ fontSize: 'clamp(2rem, 5vw, 3rem)', fontWeight: 700, marginBottom: '1rem', color: '#f0f0f3' }}>
+                    <h2 style={{ fontSize: 'clamp(2rem, 5vw, 3rem)', fontWeight: 700, marginBottom: '1rem', color: 'var(--color-text-primary)' }}>
                         Technologies I{' '}
                         <span className="text-gradient">Work With</span>
                     </h2>
-                    <p style={{ color: '#9ca3af', fontSize: '1.125rem', maxWidth: '42rem', margin: '0 auto' }}>
+                    <p style={{ color: 'var(--color-text-secondary)', fontSize: '1.125rem', maxWidth: '42rem', margin: '0 auto' }}>
                         A comprehensive overview of my technical skills and expertise.
                     </p>
                 </div>
@@ -71,7 +71,7 @@ const SkillsSection = () => {
                             style={{
                                 padding: '0.625rem 1.25rem',
                                 borderRadius: '9999px',
-                                color: '#d1d5db',
+                                color: 'var(--color-text-secondary)',
                                 fontSize: '0.875rem',
                                 fontWeight: 500,
                                 cursor: 'default',
@@ -113,7 +113,7 @@ const SkillsSection = () => {
                                 }}>
                                     {category.icon}
                                 </div>
-                                <h3 style={{ fontSize: '1.5rem', fontWeight: 600, color: '#fff' }}>
+                                <h3 style={{ fontSize: '1.5rem', fontWeight: 600, color: 'var(--color-text-primary)' }}>
                                     {category.title}
                                 </h3>
                             </div>
@@ -122,10 +122,10 @@ const SkillsSection = () => {
                                 {category.skills.map((skill, skillIndex) => (
                                     <div key={skillIndex}>
                                         <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.5rem' }}>
-                                            <span style={{ color: '#d1d5db', fontWeight: 500 }}>{skill.name}</span>
-                                            <span style={{ color: '#a78bfa' }}>{skill.level}%</span>
+                                            <span style={{ color: 'var(--color-text-secondary)', fontWeight: 500 }}>{skill.name}</span>
+                                            <span style={{ color: 'var(--color-primary)' }}>{skill.level}%</span>
                                         </div>
-                                        <div style={{ height: '0.5rem', background: '#1f2937', borderRadius: '9999px', overflow: 'hidden' }}>
+                                        <div style={{ height: '0.5rem', background: 'var(--color-border)', borderRadius: '9999px', overflow: 'hidden' }}>
                                             <div
                                                 style={{
                                                     height: '100%',

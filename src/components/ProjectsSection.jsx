@@ -95,14 +95,14 @@ const ProjectsSection = () => {
             <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 1.5rem', position: 'relative', zIndex: 10 }}>
                 {/* Section Header */}
                 <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
-                    <span className="glass-effect" style={{ display: 'inline-block', padding: '0.5rem 1rem', borderRadius: '9999px', color: '#a78bfa', fontSize: '0.875rem', fontWeight: 500, marginBottom: '1rem' }}>
+                    <span className="glass-effect" style={{ display: 'inline-block', padding: '0.5rem 1rem', borderRadius: '9999px', color: 'var(--color-primary)', fontSize: '0.875rem', fontWeight: 500, marginBottom: '1rem' }}>
                         My Work
                     </span>
-                    <h2 style={{ fontSize: 'clamp(2rem, 5vw, 3rem)', fontWeight: 700, marginBottom: '1rem', color: '#f0f0f3' }}>
+                    <h2 style={{ fontSize: 'clamp(2rem, 5vw, 3rem)', fontWeight: 700, marginBottom: '1rem', color: 'var(--color-text-primary)' }}>
                         Featured{' '}
                         <span className="text-gradient">Projects</span>
                     </h2>
-                    <p style={{ color: '#9ca3af', fontSize: '1.125rem', maxWidth: '42rem', margin: '0 auto' }}>
+                    <p style={{ color: 'var(--color-text-secondary)', fontSize: '1.125rem', maxWidth: '42rem', margin: '0 auto' }}>
                         A selection of my best work showcasing my skills and expertise.
                     </p>
                 </div>
@@ -121,11 +121,11 @@ const ProjectsSection = () => {
                                 cursor: 'pointer',
                                 transition: 'all 0.3s ease',
                                 background: activeFilter === filter
-                                    ? 'linear-gradient(to right, #8b5cf6, #ec4899)'
-                                    : 'rgba(10, 10, 15, 0.6)',
-                                color: '#fff',
+                                    ? 'var(--gradient-primary)'
+                                    : 'var(--glass-bg)',
+                                color: activeFilter === filter ? '#fff' : 'var(--color-text-primary)',
                                 backdropFilter: activeFilter === filter ? 'none' : 'blur(16px)',
-                                boxShadow: activeFilter === filter ? '0 10px 25px rgba(139, 92, 246, 0.3)' : 'none',
+                                boxShadow: activeFilter === filter ? 'var(--shadow-glow)' : 'none',
                             }}
                         >
                             {filter}
@@ -166,7 +166,7 @@ const ProjectsSection = () => {
                                 <div style={{
                                     position: 'absolute',
                                     inset: 0,
-                                    background: 'linear-gradient(to top, #16161f, transparent, transparent)',
+                                    background: 'linear-gradient(to top, var(--color-card), transparent, transparent)',
                                 }}></div>
 
                                 {/* Overlay Actions */}
@@ -231,10 +231,10 @@ const ProjectsSection = () => {
 
                             {/* Project Info */}
                             <div style={{ padding: '1.5rem' }}>
-                                <h3 style={{ fontSize: '1.25rem', fontWeight: 600, color: '#fff', marginBottom: '0.5rem' }}>
+                                <h3 style={{ fontSize: '1.25rem', fontWeight: 600, color: 'var(--color-text-primary)', marginBottom: '0.5rem' }}>
                                     {project.title}
                                 </h3>
-                                <p style={{ color: '#9ca3af', fontSize: '0.875rem', marginBottom: '1rem', lineHeight: 1.6 }}>
+                                <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.875rem', marginBottom: '1rem', lineHeight: 1.6 }}>
                                     {project.description}
                                 </p>
 
@@ -249,7 +249,7 @@ const ProjectsSection = () => {
                                                 fontSize: '0.75rem',
                                                 fontWeight: 500,
                                                 background: 'rgba(139, 92, 246, 0.1)',
-                                                color: '#a78bfa',
+                                                color: 'var(--color-primary)',
                                                 border: '1px solid rgba(139, 92, 246, 0.2)',
                                             }}
                                         >
@@ -287,7 +287,7 @@ const ProjectsSection = () => {
                     </a>
                 </div>
             </div>
-        </section>
+        </section >
     );
 };
 

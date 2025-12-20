@@ -5,12 +5,6 @@ const AboutSection = () => {
         { number: '10+', label: 'Technologies' },
     ];
 
-    const experiences = [
-        { role: 'Senior Developer', company: 'Tech Company', period: '2022 - Present' },
-        { role: 'Full Stack Developer', company: 'Startup Inc', period: '2020 - 2022' },
-        { role: 'Junior Developer', company: 'Agency XYZ', period: '2019 - 2020' },
-    ];
-
     return (
         <section id="about" style={{ padding: '6rem 0', position: 'relative' }}>
             {/* Background Elements */}
@@ -40,14 +34,14 @@ const AboutSection = () => {
             <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 1.5rem', position: 'relative', zIndex: 10 }}>
                 {/* Section Header */}
                 <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
-                    <span className="glass-effect" style={{ display: 'inline-block', padding: '0.5rem 1rem', borderRadius: '9999px', color: '#a78bfa', fontSize: '0.875rem', fontWeight: 500, marginBottom: '1rem' }}>
+                    <span className="glass-effect" style={{ display: 'inline-block', padding: '0.5rem 1rem', borderRadius: '9999px', color: 'var(--color-primary)', fontSize: '0.875rem', fontWeight: 500, marginBottom: '1rem' }}>
                         About Me
                     </span>
-                    <h2 style={{ fontSize: 'clamp(2rem, 5vw, 3rem)', fontWeight: 700, marginBottom: '1rem', color: '#f0f0f3' }}>
+                    <h2 style={{ fontSize: 'clamp(2rem, 5vw, 3rem)', fontWeight: 700, marginBottom: '1rem', color: 'var(--color-text-primary)' }}>
                         Transforming Data Into{' '}
                         <span className="text-gradient">Knowledge</span>
                     </h2>
-                    <p style={{ color: '#9ca3af', fontSize: '1.125rem', maxWidth: '42rem', margin: '0 auto' }}>
+                    <p style={{ color: 'var(--color-text-secondary)', fontSize: '1.125rem', maxWidth: '42rem', margin: '0 auto' }}>
                         Learn more about my journey, skills, and what drives me as a developer.
                     </p>
                 </div>
@@ -62,18 +56,18 @@ const AboutSection = () => {
                     {/* Left - About Text */}
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
                         <div className="glass-effect hover-lift" style={{ padding: '2rem', borderRadius: '1.5rem' }}>
-                            <h3 style={{ fontSize: '1.5rem', fontWeight: 600, marginBottom: '1rem', color: '#fff' }}>
+                            <h3 style={{ fontSize: '1.5rem', fontWeight: 600, marginBottom: '1rem', color: 'var(--color-text-primary)' }}>
                                 Who I Am
                             </h3>
-                            <p style={{ color: '#9ca3af', lineHeight: 1.7, marginBottom: '1rem' }}>
-                                I’m a passionate Data Science undergraduate with a strong interest in transforming data into meaningful insights. I enjoy working with data analysis, visualization, and machine learning to solve real-world problems using clean and efficient approaches.
+                            <p style={{ color: 'var(--color-text-secondary)', lineHeight: 1.7, marginBottom: '1rem' }}>
+                                I'm a passionate Data Science undergraduate with a strong interest in transforming data into meaningful insights. I enjoy working with data analysis, visualization, and machine learning to solve real-world problems using clean and efficient approaches.
 
-When I’m not working with data, I explore emerging technologies, build hands-on projects, and continuously improve my analytical and technical skills. I’m driven by curiosity, learning, and the goal of creating data-driven solutions that make an impact.
+                                When I'm not working with data, I explore emerging technologies, build hands-on projects, and continuously improve my analytical and technical skills. I'm driven by curiosity, learning, and the goal of creating data-driven solutions that make an impact.
                             </p>
                         </div>
 
                         <div className="glass-effect hover-lift" style={{ padding: '2rem', borderRadius: '1.5rem' }}>
-                            <h3 style={{ fontSize: '1.5rem', fontWeight: 600, marginBottom: '1rem', color: '#fff' }}>
+                            <h3 style={{ fontSize: '1.5rem', fontWeight: 600, marginBottom: '1rem', color: 'var(--color-text-primary)' }}>
                                 What I Do
                             </h3>
                             <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '1rem' }}>
@@ -85,7 +79,7 @@ When I’m not working with data, I explore emerging technologies, build hands-o
                                 ].map((item, index) => (
                                     <li key={index} style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
                                         <span style={{ fontSize: '1.5rem' }}>{item.icon}</span>
-                                        <span style={{ color: '#d1d5db' }}>{item.text}</span>
+                                        <span style={{ color: 'var(--color-text-secondary)' }}>{item.text}</span>
                                     </li>
                                 ))}
                             </ul>
@@ -105,14 +99,14 @@ When I’m not working with data, I explore emerging technologies, build hands-o
                                     <div className="gradient-text-animated" style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 700, marginBottom: '0.5rem' }}>
                                         {stat.number}
                                     </div>
-                                    <div style={{ color: '#9ca3af' }}>
+                                    <div style={{ color: 'var(--color-text-secondary)' }}>
                                         {stat.label}
                                     </div>
                                 </div>
                             ))}
                         </div>
 
-                        
+
                     </div>
                 </div>
             </div>
@@ -121,3 +115,4 @@ When I’m not working with data, I explore emerging technologies, build hands-o
 };
 
 export default AboutSection;
+

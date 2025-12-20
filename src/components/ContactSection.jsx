@@ -75,9 +75,9 @@ const ContactSection = () => {
         width: '100%',
         padding: '1rem 1.25rem',
         borderRadius: '0.75rem',
-        background: 'rgba(255, 255, 255, 0.05)',
-        border: '1px solid rgba(255, 255, 255, 0.1)',
-        color: '#fff',
+        background: 'var(--glass-bg)',
+        border: '1px solid var(--glass-border)',
+        color: 'var(--color-text-primary)',
         fontSize: '1rem',
         outline: 'none',
         transition: 'border-color 0.3s ease',
@@ -105,14 +105,14 @@ const ContactSection = () => {
             <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 1.5rem', position: 'relative', zIndex: 10 }}>
                 {/* Section Header */}
                 <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
-                    <span className="glass-effect" style={{ display: 'inline-block', padding: '0.5rem 1rem', borderRadius: '9999px', color: '#a78bfa', fontSize: '0.875rem', fontWeight: 500, marginBottom: '1rem' }}>
+                    <span className="glass-effect" style={{ display: 'inline-block', padding: '0.5rem 1rem', borderRadius: '9999px', color: 'var(--color-primary)', fontSize: '0.875rem', fontWeight: 500, marginBottom: '1rem' }}>
                         Get In Touch
                     </span>
-                    <h2 style={{ fontSize: 'clamp(2rem, 5vw, 3rem)', fontWeight: 700, marginBottom: '1rem', color: '#f0f0f3' }}>
+                    <h2 style={{ fontSize: 'clamp(2rem, 5vw, 3rem)', fontWeight: 700, marginBottom: '1rem', color: 'var(--color-text-primary)' }}>
                         Let's Work{' '}
                         <span className="text-gradient">Together</span>
                     </h2>
-                    <p style={{ color: '#9ca3af', fontSize: '1.125rem', maxWidth: '42rem', margin: '0 auto' }}>
+                    <p style={{ color: 'var(--color-text-secondary)', fontSize: '1.125rem', maxWidth: '42rem', margin: '0 auto' }}>
                         Have a project in mind? I'd love to hear about it. Send me a message and let's create something amazing.
                     </p>
                 </div>
@@ -125,7 +125,7 @@ const ContactSection = () => {
                 }}>
                     {/* Contact Info */}
                     <div className="glass-effect" style={{ padding: '2rem', borderRadius: '1.5rem' }}>
-                        <h3 style={{ fontSize: '1.5rem', fontWeight: 600, color: '#fff', marginBottom: '1.5rem' }}>
+                        <h3 style={{ fontSize: '1.5rem', fontWeight: 600, color: 'var(--color-text-primary)', marginBottom: '1.5rem' }}>
                             Contact Information
                         </h3>
                         <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
@@ -143,21 +143,21 @@ const ContactSection = () => {
                                         display: 'flex',
                                         alignItems: 'center',
                                         justifyContent: 'center',
-                                        color: '#a78bfa',
+                                        color: 'var(--color-primary)',
                                     }}>
                                         {info.icon}
                                     </div>
                                     <div>
-                                        <p style={{ color: '#9ca3af', fontSize: '0.875rem' }}>{info.label}</p>
-                                        <p style={{ color: '#fff' }}>{info.value}</p>
+                                        <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.875rem' }}>{info.label}</p>
+                                        <p style={{ color: 'var(--color-text-primary)' }}>{info.value}</p>
                                     </div>
                                 </a>
                             ))}
                         </div>
 
                         {/* Social Links */}
-                        <div style={{ marginTop: '2rem', paddingTop: '2rem', borderTop: '1px solid rgba(255, 255, 255, 0.1)' }}>
-                            <p style={{ color: '#9ca3af', marginBottom: '1rem' }}>Follow me on</p>
+                        <div style={{ marginTop: '2rem', paddingTop: '2rem', borderTop: '1px solid var(--glass-border)' }}>
+                            <p style={{ color: 'var(--color-text-secondary)', marginBottom: '1rem' }}>Follow me on</p>
                             <div style={{ display: 'flex', gap: '1rem' }}>
                                 {socialLinks.map((social) => (
                                     <a
@@ -169,11 +169,11 @@ const ContactSection = () => {
                                             width: '2.5rem',
                                             height: '2.5rem',
                                             borderRadius: '0.75rem',
-                                            background: 'rgba(255, 255, 255, 0.05)',
+                                            background: 'var(--glass-bg)',
                                             display: 'flex',
                                             alignItems: 'center',
                                             justifyContent: 'center',
-                                            color: '#9ca3af',
+                                            color: 'var(--color-text-secondary)',
                                             transition: 'all 0.3s ease',
                                             textDecoration: 'none',
                                         }}
@@ -192,7 +192,7 @@ const ContactSection = () => {
                     <form onSubmit={handleSubmit} className="glass-effect" style={{ padding: '2rem', borderRadius: '1.5rem' }}>
                         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1.5rem', marginBottom: '1.5rem' }}>
                             <div>
-                                <label htmlFor="name" style={{ display: 'block', color: '#d1d5db', fontSize: '0.875rem', fontWeight: 500, marginBottom: '0.5rem' }}>
+                                <label htmlFor="name" style={{ display: 'block', color: 'var(--color-text-secondary)', fontSize: '0.875rem', fontWeight: 500, marginBottom: '0.5rem' }}>
                                     Your Name
                                 </label>
                                 <input
@@ -207,7 +207,7 @@ const ContactSection = () => {
                                 />
                             </div>
                             <div>
-                                <label htmlFor="email" style={{ display: 'block', color: '#d1d5db', fontSize: '0.875rem', fontWeight: 500, marginBottom: '0.5rem' }}>
+                                <label htmlFor="email" style={{ display: 'block', color: 'var(--color-text-secondary)', fontSize: '0.875rem', fontWeight: 500, marginBottom: '0.5rem' }}>
                                     Your Email
                                 </label>
                                 <input
@@ -224,7 +224,7 @@ const ContactSection = () => {
                         </div>
 
                         <div style={{ marginBottom: '1.5rem' }}>
-                            <label htmlFor="subject" style={{ display: 'block', color: '#d1d5db', fontSize: '0.875rem', fontWeight: 500, marginBottom: '0.5rem' }}>
+                            <label htmlFor="subject" style={{ display: 'block', color: 'var(--color-text-secondary)', fontSize: '0.875rem', fontWeight: 500, marginBottom: '0.5rem' }}>
                                 Subject
                             </label>
                             <input
@@ -240,7 +240,7 @@ const ContactSection = () => {
                         </div>
 
                         <div style={{ marginBottom: '1.5rem' }}>
-                            <label htmlFor="message" style={{ display: 'block', color: '#d1d5db', fontSize: '0.875rem', fontWeight: 500, marginBottom: '0.5rem' }}>
+                            <label htmlFor="message" style={{ display: 'block', color: 'var(--color-text-secondary)', fontSize: '0.875rem', fontWeight: 500, marginBottom: '0.5rem' }}>
                                 Message
                             </label>
                             <textarea
