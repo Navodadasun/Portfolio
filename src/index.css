@@ -378,6 +378,25 @@ html {
    MOBILE RESPONSIVE STYLES
    ============================================ */
 
+/* Extra Small Mobile (320px - 400px) */
+@media (min-width: 400px) {
+  .xs\:block {
+    display: block !important;
+  }
+}
+
+/* Hero Section Mobile Optimization */
+@media (max-width: 768px) {
+  #home {
+    padding-top: 5rem !important;
+    padding-bottom: 3rem !important;
+  }
+
+  #home .glass-effect {
+    padding: 0.5rem 1rem;
+  }
+}
+
 /* Small Mobile (320px - 480px) */
 @media (max-width: 480px) {
   .theme-toggle {
@@ -391,19 +410,38 @@ html {
   }
 
   .glass-effect {
-    padding: 1rem;
+    padding: 0.75rem;
   }
 
   h1 {
-    font-size: 2rem !important;
+    font-size: 1.75rem !important;
+    line-height: 1.2 !important;
   }
 
   h2 {
-    font-size: 1.5rem !important;
+    font-size: 1.35rem !important;
   }
 
   section {
-    padding: 3rem 0 !important;
+    padding: 2.5rem 0 !important;
+  }
+
+  /* Hero specific adjustments */
+  #home {
+    padding-top: 4.5rem !important;
+    padding-bottom: 2rem !important;
+  }
+
+  #home h1 {
+    font-size: 1.75rem !important;
+    margin-bottom: 0.75rem !important;
+  }
+
+  /* Make CTA buttons more compact on very small screens */
+  #home a[href="#projects"],
+  #home a[href="#contact"] {
+    padding: 0.65rem 1.25rem !important;
+    font-size: 0.875rem !important;
   }
 }
 

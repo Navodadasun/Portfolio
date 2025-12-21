@@ -5,7 +5,7 @@ const HeroSection = () => {
     return (
         <section
             id="home"
-            className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20"
+            className="min-h-screen flex items-center justify-center relative overflow-hidden pt-24 pb-20 md:pt-20 md:pb-0"
         >
             {/* Animated Background Elements */}
             <div className="absolute inset-0 overflow-hidden">
@@ -15,17 +15,17 @@ const HeroSection = () => {
                     style={{ background: 'var(--gradient-mesh)' }}
                 ></div>
 
-                {/* Floating Orbs */}
+                {/* Floating Orbs - Smaller on mobile */}
                 <div
-                    className="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-500/20 rounded-full blur-3xl"
+                    className="absolute top-1/4 left-1/4 w-48 h-48 md:w-96 md:h-96 bg-purple-500/20 rounded-full blur-3xl"
                     style={{ animation: 'float 8s ease-in-out infinite' }}
                 ></div>
                 <div
-                    className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-pink-500/20 rounded-full blur-3xl"
+                    className="absolute bottom-1/4 right-1/4 w-40 h-40 md:w-80 md:h-80 bg-pink-500/20 rounded-full blur-3xl"
                     style={{ animation: 'float 6s ease-in-out infinite reverse' }}
                 ></div>
                 <div
-                    className="absolute top-1/2 right-1/3 w-64 h-64 bg-cyan-500/10 rounded-full blur-3xl"
+                    className="absolute top-1/2 right-1/3 w-32 h-32 md:w-64 md:h-64 bg-cyan-500/10 rounded-full blur-3xl"
                     style={{ animation: 'float 10s ease-in-out infinite' }}
                 ></div>
 
@@ -42,11 +42,11 @@ const HeroSection = () => {
             </div>
 
             {/* Content */}
-            <div className="relative z-10 max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
-                {/* Text Content */}
-                <div className="text-center md:text-left">
+            <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+                {/* Text Content - Order 2 on mobile so image shows first, Order 1 on desktop */}
+                <div className="text-center md:text-left order-2 md:order-1">
                     <div
-                        className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-effect mb-6"
+                        className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-effect mb-4 sm:mb-6"
                         style={{ animation: 'fade-in 0.8s ease-out' }}
                     >
                         <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
@@ -54,7 +54,7 @@ const HeroSection = () => {
                     </div>
 
                     <h1
-                        className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6"
+                        className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-3 sm:mb-4 md:mb-6"
                         style={{ animation: 'fade-in 0.8s ease-out 0.2s both', color: 'var(--color-text-primary)' }}
                     >
                         Hi, I'm{' '}
@@ -62,27 +62,27 @@ const HeroSection = () => {
                     </h1>
 
                     <p
-                        className="text-xl md:text-2xl mb-4"
+                        className="text-lg sm:text-xl md:text-2xl mb-4 sm:mb-5 md:mb-4"
                         style={{ animation: 'fade-in 0.8s ease-out 0.4s both', color: 'var(--color-text-secondary)' }}
                     >
                         Data Science Undergraduate
                     </p>
 
                     <p
-                        className="text-lg max-w-lg mb-8"
+                        className="text-base sm:text-lg max-w-lg mx-auto md:mx-0 mb-8 sm:mb-8 md:mb-8 px-2 sm:px-0"
                         style={{ animation: 'fade-in 0.8s ease-out 0.6s both', color: 'var(--color-text-secondary)' }}
                     >
-                        I'm building my journey in data science by exploring data analysis, statistics, and machine learning to create practical, insight-driven solutions..
+                        I'm building my journey in data science by exploring data analysis, statistics, and machine learning to create practical, insight-driven solutions.
                     </p>
 
                     {/* CTA Buttons */}
                     <div
-                        className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start"
+                        className="flex flex-col sm:flex-row gap-4 sm:gap-4 justify-center md:justify-start px-4 sm:px-0"
                         style={{ animation: 'fade-in 0.8s ease-out 0.8s both' }}
                     >
                         <a
                             href="#projects"
-                            className="group inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full text-white font-semibold hover:shadow-2xl transition-all duration-300 hover:-translate-y-1"
+                            className="group inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3 sm:py-4 rounded-full text-white font-semibold hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 text-sm sm:text-base"
                             style={{ background: 'var(--gradient-primary)' }}
                         >
                             View My Work
@@ -97,7 +97,7 @@ const HeroSection = () => {
                         </a>
                         <a
                             href="#contact"
-                            className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full glass-effect font-semibold transition-all duration-300 hover:border-purple-500/50"
+                            className="inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3 sm:py-4 rounded-full glass-effect font-semibold transition-all duration-300 hover:border-purple-500/50 text-sm sm:text-base"
                             style={{ color: 'var(--color-text-primary)', borderColor: 'var(--glass-border)' }}
                         >
                             Get In Touch
@@ -106,7 +106,7 @@ const HeroSection = () => {
 
                     {/* Social Links */}
                     <div
-                        className="flex gap-4 mt-10 justify-center md:justify-start"
+                        className="flex gap-3 sm:gap-4 mt-6 sm:mt-10 justify-center md:justify-start"
                         style={{ animation: 'fade-in 0.8s ease-out 1s both' }}
                     >
                         {[
@@ -131,9 +131,9 @@ const HeroSection = () => {
                     </div>
                 </div>
 
-                {/* Profile Image */}
+                {/* Profile Image - Order 1 on mobile so it shows first, Order 2 on desktop */}
                 <div
-                    className="relative flex justify-center"
+                    className="relative flex justify-center order-1 md:order-2 mb-6 md:mb-0"
                     style={{ animation: 'fade-in 0.8s ease-out 0.4s both' }}
                 >
                     {/* Glowing Ring */}
@@ -141,7 +141,7 @@ const HeroSection = () => {
                         className="absolute inset-0 flex items-center justify-center"
                         style={{ animation: 'glow 3s ease-in-out infinite' }}
                     >
-                        <div className="w-80 h-80 md:w-96 md:h-96 rounded-full border-2 border-purple-500/30"></div>
+                        <div className="w-52 h-52 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full border-2 border-purple-500/30"></div>
                     </div>
 
                     {/* Rotating Border */}
@@ -149,11 +149,11 @@ const HeroSection = () => {
                         className="absolute inset-0 flex items-center justify-center"
                         style={{ animation: 'spin 20s linear infinite' }}
                     >
-                        <div className="w-[340px] h-[340px] md:w-[420px] md:h-[420px] rounded-full border-2 border-transparent border-t-purple-500 border-r-pink-500"></div>
+                        <div className="w-[220px] h-[220px] sm:w-[280px] sm:h-[280px] md:w-[340px] md:h-[340px] lg:w-[420px] lg:h-[420px] rounded-full border-2 border-transparent border-t-purple-500 border-r-pink-500"></div>
                     </div>
 
                     {/* Profile Image Container */}
-                    <div className="relative w-72 h-72 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-purple-500/20">
+                    <div className="relative w-44 h-44 sm:w-56 sm:h-56 md:w-72 md:h-72 lg:w-80 lg:h-80 rounded-full overflow-hidden border-4 border-purple-500/20">
                         <img
                             src={profileImage}
                             alt="Navoda Dasun - Data Science Undergraduate"
@@ -163,31 +163,31 @@ const HeroSection = () => {
                         <div className="absolute inset-0 bg-gradient-to-tr from-purple-500/10 to-transparent"></div>
                     </div>
 
-                    {/* Floating Elements */}
+                    {/* Floating Elements - Hidden on very small screens, smaller on mobile */}
                     <div
-                        className="absolute -top-4 -right-4 glass-effect px-4 py-2 rounded-xl"
+                        className="absolute -top-2 -right-2 sm:-top-4 sm:-right-4 glass-effect px-2 py-1 sm:px-4 sm:py-2 rounded-xl hidden xs:block"
                         style={{ animation: 'float 4s ease-in-out infinite' }}
                     >
-                        <span className="text-2xl">💻</span>
+                        <span className="text-lg sm:text-2xl">💻</span>
                     </div>
                     <div
-                        className="absolute -bottom-4 -left-4 glass-effect px-4 py-2 rounded-xl"
+                        className="absolute -bottom-2 -left-2 sm:-bottom-4 sm:-left-4 glass-effect px-2 py-1 sm:px-4 sm:py-2 rounded-xl hidden xs:block"
                         style={{ animation: 'float 5s ease-in-out infinite reverse' }}
                     >
-                        <span className="text-2xl">🚀</span>
+                        <span className="text-lg sm:text-2xl">🚀</span>
                     </div>
                     <div
-                        className="absolute top-1/2 -right-8 glass-effect px-4 py-2 rounded-xl"
+                        className="absolute top-1/2 -right-4 sm:-right-8 glass-effect px-2 py-1 sm:px-4 sm:py-2 rounded-xl hidden sm:block"
                         style={{ animation: 'float 6s ease-in-out infinite' }}
                     >
-                        <span className="text-2xl">✨</span>
+                        <span className="text-lg sm:text-2xl">✨</span>
                     </div>
                 </div>
             </div>
 
-            {/* Scroll Indicator */}
+            {/* Scroll Indicator - Hidden on mobile */}
             <div
-                className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+                className="absolute bottom-8 left-1/2 transform -translate-x-1/2 hidden md:block"
                 style={{ animation: 'fade-in 0.8s ease-out 1.2s both' }}
             >
                 <a
