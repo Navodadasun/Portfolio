@@ -77,17 +77,16 @@ const HeroSection = () => {
 
                     {/* CTA Buttons */}
                     <div
-                        className="flex flex-col sm:flex-row gap-4 sm:gap-4 justify-center md:justify-start px-4 sm:px-0"
+                        className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start px-4 sm:px-0"
                         style={{ animation: 'fade-in 0.8s ease-out 0.8s both' }}
                     >
                         <a
                             href="#projects"
-                            className="group inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3 sm:py-4 rounded-full text-white font-semibold hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 text-sm sm:text-base"
-                            style={{ background: 'var(--gradient-primary)' }}
+                            className="btn-primary group"
                         >
                             View My Work
                             <svg
-                                className="w-5 h-5 transition-transform group-hover:translate-x-1"
+                                className="w-4 h-4 md:w-5 md:h-5 transition-transform group-hover:translate-x-1 flex-shrink-0"
                                 fill="none"
                                 stroke="currentColor"
                                 viewBox="0 0 24 24"
@@ -97,8 +96,7 @@ const HeroSection = () => {
                         </a>
                         <a
                             href="#contact"
-                            className="inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3 sm:py-4 rounded-full glass-effect font-semibold transition-all duration-300 hover:border-purple-500/50 text-sm sm:text-base"
-                            style={{ color: 'var(--color-text-primary)', borderColor: 'var(--glass-border)' }}
+                            className="btn-secondary"
                         >
                             Get In Touch
                         </a>
