@@ -69,7 +69,7 @@ const HeroSection = () => {
                     </p>
 
                     <p
-                        className="text-base sm:text-lg max-w-lg mx-auto md:mx-0 mb-8 sm:mb-8 md:mb-8 px-2 sm:px-0"
+                        className="text-base sm:text-lg max-w-lg mx-auto md:mx-0 mb-12 sm:mb-14 md:mb-16 px-2 sm:px-0"
                         style={{ animation: 'fade-in 0.8s ease-out 0.6s both', color: 'var(--color-text-secondary)' }}
                     >
                         I'm building my journey in data science by exploring data analysis, statistics, and machine learning to create practical, insight-driven solutions.
@@ -99,6 +99,21 @@ const HeroSection = () => {
                             className="btn-secondary"
                         >
                             Get In Touch
+                        </a>
+                        <a
+                            href="/Portfolio/src/pdf/Navoda-CV.pdf"
+                            download="Navoda-Dasun-CV.pdf"
+                            className="btn-secondary group"
+                        >
+                            Download CV
+                            <svg
+                                className="w-4 h-4 md:w-5 md:h-5 transition-transform group-hover:translate-y-1 flex-shrink-0"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                            >
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 1 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                            </svg>
                         </a>
                     </div>
 
