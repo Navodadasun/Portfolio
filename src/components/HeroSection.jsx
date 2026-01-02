@@ -101,7 +101,7 @@ const HeroSection = () => {
                             Get In Touch
                         </a>
                         <a
-                            href="/Portfolio/src/pdf/Navoda-CV.pdf"
+                            href="/Portfolio/Navoda-CV.pdf"
                             download="Navoda-Dasun-CV.pdf"
                             className="btn-secondary group"
                         >
