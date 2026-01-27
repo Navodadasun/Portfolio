@@ -7,7 +7,7 @@ const ProjectsSection = () => {
 
     const projects = [
         {
-            title: 'LMS',
+            title: 'EduFlex',
             description: 'Learning Management System - A comprehensive platform for online education with courses, quizzes, and progress tracking.',
             image: 'https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=800&q=80',
             tags: ['HTML', 'CSS', 'JavaScript', 'PHP', 'MySQL'],
@@ -16,27 +16,27 @@ const ProjectsSection = () => {
             githubUrl: '#',
         },
         {
-            title: 'Tour Guide',
-            description: 'Tour Guide web app - Discover amazing destinations with curated travel experiences and local guides.',
-            image: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=800&q=80',
+            title: 'TravelMania',
+            description: 'TravelMania web app - Discover amazing destinations with curated travel experiences and local guides.',
+            image: './src/images/Gemini_Generated_Image_65dg1165dg1165dg.png',
             tags: ['Java', 'HTML', 'CSS', 'JavaScript', 'MySQL'],
             category: 'Web App',
             liveUrl: '#',
-            githubUrl: '#',
+            githubUrl: 'https://github.com/Navodadasun/TourGuide2',
         },
         {
             title: 'SafeZone',
             description: 'Disaster management system - Real-time alerts, evacuation routes, and emergency resource coordination.',
-            image: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&q=80',
+            image: './src/images/WhatsApp Image 2026-01-27 at 10.48.41 AM.jpeg',
             tags: ['React', 'Node.js', 'REST API', 'MongoDB'],
             category: 'Web App',
             liveUrl: '#',
-            githubUrl: '#',
+            githubUrl: 'https://github.com/Deeghau0816/SafeZone_DMS',
         },
         {
             title: 'Fitra',
             description: 'UI/UX Design - Clean and intuitive mobile app interface with modern design principles.',
-            image: 'https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&q=80',
+            image: './src/images/1755559905251.jpg',
             tags: ['Figma'],
             category: 'UI/UX',
             liveUrl: '#',
@@ -49,17 +49,27 @@ const ProjectsSection = () => {
             tags: ['Android Studio', 'Java', 'Kotlin'],
             category: 'Mobile',
             liveUrl: '#',
-            githubUrl: '#',
+            githubUrl: 'https://github.com/Navodadasun/Moodi',
         },
         {
             title: 'JobFinder',
             description: 'Job search app - Find your dream job with smart matching and easy application process.',
-            image: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=800&q=80',
+            image: './src/images/1764889492306.jpg',
             tags: ['Python', 'Flask'],
             category: 'Web App',
             liveUrl: '#',
-            githubUrl: '#',
+            githubUrl: 'https://github.com/Navodadasun/JobFinder',
         },
+        {
+            title: 'CryptoViz',
+            description: 'Real-time cryptocurrency analytics and price prediction platform with live charts and ML-based next-candle forecasts.',
+            image: './src/images/Screenshot 2026-01-27 102713.png',
+            tags: ['Python', 'FastAPI', 'Machine Learning', 'React', 'Crypto API'],
+            category: 'Web App',
+            liveUrl: '#',
+            githubUrl: 'https://github.com/Navodadasun/CryptoViz',
+        },
+
     ];
 
     const filteredProjects = activeFilter === 'All'
