@@ -1,5 +1,12 @@
 import { useState } from 'react';
 
+// Import images from src/images
+import travelManiaImg from '../images/Gemini_Generated_Image_65dg1165dg1165dg.png';
+import safeZoneImg from '../images/WhatsApp Image 2026-01-27 at 10.48.41 AM.jpeg';
+import fitraImg from '../images/1755559905251.jpg';
+import jobFinderImg from '../images/1764889492306.jpg';
+import cryptoVizImg from '../images/Screenshot 2026-01-27 102713.png';
+
 const ProjectsSection = () => {
     const [activeFilter, setActiveFilter] = useState('All');
 
@@ -18,7 +25,7 @@ const ProjectsSection = () => {
         {
             title: 'TravelMania',
             description: 'TravelMania web app - Discover amazing destinations with curated travel experiences and local guides.',
-            image: './src/images/Gemini_Generated_Image_65dg1165dg1165dg.png',
+            image: travelManiaImg,
             tags: ['Java', 'HTML', 'CSS', 'JavaScript', 'MySQL'],
             category: 'Web App',
             liveUrl: '#',
@@ -27,7 +34,7 @@ const ProjectsSection = () => {
         {
             title: 'SafeZone',
             description: 'Disaster management system - Real-time alerts, evacuation routes, and emergency resource coordination.',
-            image: './src/images/WhatsApp Image 2026-01-27 at 10.48.41 AM.jpeg',
+            image: safeZoneImg,
             tags: ['React', 'Node.js', 'REST API', 'MongoDB'],
             category: 'Web App',
             liveUrl: '#',
@@ -36,7 +43,7 @@ const ProjectsSection = () => {
         {
             title: 'Fitra',
             description: 'UI/UX Design - Clean and intuitive mobile app interface with modern design principles.',
-            image: './src/images/1755559905251.jpg',
+            image: fitraImg,
             tags: ['Figma'],
             category: 'UI/UX',
             liveUrl: '#',
@@ -54,7 +61,7 @@ const ProjectsSection = () => {
         {
             title: 'JobFinder',
             description: 'Job search app - Find your dream job with smart matching and easy application process.',
-            image: './src/images/1764889492306.jpg',
+            image: jobFinderImg,
             tags: ['Python', 'Flask'],
             category: 'Web App',
             liveUrl: '#',
@@ -63,7 +70,7 @@ const ProjectsSection = () => {
         {
             title: 'CryptoViz',
             description: 'Real-time cryptocurrency analytics and price prediction platform with live charts and ML-based next-candle forecasts.',
-            image: './src/images/Screenshot 2026-01-27 102713.png',
+            image: cryptoVizImg,
             tags: ['Python', 'FastAPI', 'Machine Learning', 'React', 'Crypto API'],
             category: 'Web App',
             liveUrl: '#',
