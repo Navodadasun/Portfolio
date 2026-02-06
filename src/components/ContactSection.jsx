@@ -16,7 +16,7 @@ const ContactSection = () => {
         e.preventDefault();
 
         // Email details
-        const recipientEmail = 'navaadasun@gmail.com';
+        const recipientEmail = 'navoddasun.official@gmail.com';
         const emailSubject = encodeURIComponent(formData.subject);
         const emailBody = encodeURIComponent(
             `Name: ${ formData.name }\nEmail: ${ formData.email }\n\nMessage:\n${ formData.message }`
@@ -40,7 +40,7 @@ const ContactSection = () => {
                 </svg>
             ),
             label: 'Email',
-            value: 'navaadasun@gmail.com',
+            value: 'navoddasun.official@gmail.com',
             href: 'mailto:hello@yourname.com',
         },
         {
