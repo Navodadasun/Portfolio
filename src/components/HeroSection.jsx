@@ -54,22 +54,22 @@ const HeroSection = () => {
                     </div>
 
                     <h1
-                        className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-3 sm:mb-4 md:mb-6"
+                        className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 sm:mb-8"
                         style={{ animation: 'fade-in 0.8s ease-out 0.2s both', color: 'var(--color-text-primary)' }}
                     >
-                        Hi, I'm{' '}
-                        <span className="gradient-text-animated">Navoda Dasun</span>
+                        <span className="block text-2xl sm:text-3xl md:text-4xl mb-4 sm:mb-5 text-white/90">Hi, I'm</span>
+                        <span className="gradient-text-animated block">Navoda Dasun</span>
                     </h1>
 
                     <p
-                        className="text-lg sm:text-xl md:text-2xl mb-4 sm:mb-5 md:mb-4"
-                        style={{ animation: 'fade-in 0.8s ease-out 0.4s both', color: 'var(--color-text-secondary)' }}
+                        className="text-xl sm:text-2xl md:text-3xl mb-8 sm:mb-10 mt-6"
+                        style={{ animation: 'fade-in 0.8s ease-out 0.4s both', color: 'var(--color-text-primary)' }}
                     >
                         Data Science Undergraduate
                     </p>
 
                     <p
-                        className="text-base sm:text-lg max-w-lg mx-auto md:mx-0 mb-12 sm:mb-14 md:mb-16 px-2 sm:px-0"
+                        className="text-base sm:text-lg max-w-lg mx-auto md:mx-0 mb-10 sm:mb-12 md:mb-16 mt-8 px-2 sm:px-0 leading-relaxed"
                         style={{ animation: 'fade-in 0.8s ease-out 0.6s both', color: 'var(--color-text-secondary)' }}
                     >
                         I'm building my journey in data science by exploring data analysis, statistics, and machine learning to create practical, insight-driven solutions.
@@ -77,7 +77,7 @@ const HeroSection = () => {
 
                     {/* CTA Buttons */}
                     <div
-                        className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start px-4 sm:px-0"
+                        className="flex flex-wrap items-center gap-3 sm:gap-4 justify-center md:justify-start px-2 sm:px-0"
                         style={{ animation: 'fade-in 0.8s ease-out 0.8s both' }}
                     >
                         <a
@@ -146,7 +146,7 @@ const HeroSection = () => {
 
                 {/* Profile Image - Order 1 on mobile so it shows first, Order 2 on desktop */}
                 <div
-                    className="relative flex justify-center order-1 md:order-2 mb-6 md:mb-0"
+                    className="relative flex justify-center order-1 md:order-2 mb-14 md:mb-0 mt-8 md:mt-0"
                     style={{ animation: 'fade-in 0.8s ease-out 0.4s both' }}
                 >
                     {/* Glowing Ring */}

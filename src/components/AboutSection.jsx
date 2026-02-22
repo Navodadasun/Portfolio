@@ -1,6 +1,6 @@
 const AboutSection = () => {
     const stats = [
-        { number: '2+', label: 'Years Experience' },
+        { number: '3rd', label: 'Year Undergrad' },
         { number: '5+', label: 'Projects Completed' },
         { number: '10+', label: 'Technologies' },
     ];

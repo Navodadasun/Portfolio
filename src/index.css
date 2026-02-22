@@ -495,8 +495,8 @@ html {
   }
 
   /* Make CTA buttons more compact on very small screens */
-  #home a[href="#projects"],
-  #home a[href="#contact"] {
+  .btn-primary,
+  .btn-secondary {
     padding: 0.65rem 1.25rem !important;
     font-size: 0.875rem !important;
   }
