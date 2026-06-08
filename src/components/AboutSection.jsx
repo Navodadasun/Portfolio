@@ -70,19 +70,7 @@ const AboutSection = () => {
                             <h3 style={{ fontSize: '1.5rem', fontWeight: 600, marginBottom: '1rem', color: 'var(--color-text-primary)' }}>
                                 What I Do
                             </h3>
-                            <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-                                {[
-                                    { icon: "📊", text: "Data Analysis & Insight Extraction" },
-                                    { icon: "📈", text: "Data Visualization & Reporting" },
-                                    { icon: "🤖", text: "Machine Learning Model Development" },
-                                    { icon: "🧹", text: "Data Cleaning & Preparation" },
-                                ].map((item, index) => (
-                                    <li key={index} style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-                                        <span style={{ fontSize: '1.5rem' }}>{item.icon}</span>
-                                        <span style={{ color: 'var(--color-text-secondary)' }}>{item.text}</span>
-                                    </li>
-                                ))}
-                            </ul>
+                            
                         </div>
                     </div>
 
