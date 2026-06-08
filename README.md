@@ -1,16 +1,90 @@
-# React + Vite
+# 🚀 Navod Dasun - Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio website! This portfolio showcases my projects, technical skills, certifications, and experience as an aspiring Data Engineer, Data Analyst, and Software Developer.
 
-Currently, two official plugins are available:
+## 🌐 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔗 Portfolio Website: https://navodadasun.github.io/Portfolio/
 
-## React Compiler
+## 👨‍💻 About Me
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Hi, I'm **Navod Dasun**, an undergraduate passionate about:
 
-## Expanding the ESLint configuration
+- Data Engineering
+- Data Analytics
+- Machine Learning
+- Business Intelligence
+- Cloud Technologies
+- Full-Stack Development
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+I enjoy building data-driven solutions and creating impactful applications that solve real-world problems.
+
+## 🛠️ Technologies Used
+
+### Frontend
+- HTML5
+- CSS3
+- JavaScript
+
+### Tools & Platforms
+- Git & GitHub
+- VS Code
+- GitHub Pages
+
+### Data & Cloud Technologies
+- Python
+- SQL Server
+- Power BI
+- Apache Spark
+- AWS
+- Azure Data Factory
+- Databricks
+
+## 📂 Featured Projects
+
+### 🛡️ SafeZone DMS
+A Disaster Management System designed to improve emergency response and disaster preparedness.
+
+### 📊 Data Warehouse & Analytics Project
+End-to-end Data Warehouse solution using:
+- SQL Server
+- ETL Pipelines
+- Data Modeling
+- Star Schema Design
+- Business Intelligence Reporting
+
+### 🤖 Fraud Detection Analysis
+Machine Learning project focused on detecting fraudulent transactions using imbalanced datasets and predictive modeling.
+
+## 🎓 Certifications
+
+- AWS Cloud Foundations
+- Data Engineering Fundamentals
+- SQL & Database Management
+- Power BI Analytics
+
+## 📈 Current Learning
+
+Currently expanding my knowledge in:
+
+- AWS Cloud Services
+- Data Engineering Pipelines
+- Apache Spark
+- Data Warehousing
+- Machine Learning Operations (MLOps)
+
+## 📬 Contact
+
+📧 Email: your-email@example.com
+
+💼 LinkedIn: https://linkedin.com/in/your-profile
+
+🐙 GitHub: https://github.com/Navodadasun
+
+## ⭐ Support
+
+If you like this portfolio, consider giving the repository a star ⭐
+
+---
+
+Built with ❤️ by Navod Dasun
