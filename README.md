@@ -73,13 +73,7 @@ Currently expanding my knowledge in:
 - Data Warehousing
 - Machine Learning Operations (MLOps)
 
-## 📬 Contact
 
-📧 Email: your-email@example.com
-
-💼 LinkedIn: https://linkedin.com/in/your-profile
-
-🐙 GitHub: https://github.com/Navodadasun
 
 ## ⭐ Support
 
